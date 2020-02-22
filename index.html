@@ -1,0 +1,3393 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Curso de Lungojs</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="cleartype" content="on">
+
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+
+
+  <!-- iPhone -->
+  <link href="http://lungo.tapquo.com/resources/icon-57.png" sizes="57x57" rel="apple-touch-icon">
+  <link href="http://lungo.tapquo.com/resources/startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+  <!-- iPhone (Retina) -->
+  <link href="http://lungo.tapquo.com/resources/icon-114.png" sizes="114x114" rel="apple-touch-icon">
+  <link href="http://lungo.tapquo.com/resources/startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+  <!-- iPhone 5 -->
+  <link href="http://lungo.tapquo.com/resources/startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+  <!-- iPad -->
+  <link href="http://lungo.tapquo.com/resources/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+  <link href="http://lungo.tapquo.com/resources/startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: portrait)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+  <link href="http://lungo.tapquo.com/resources/startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: landscape)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+  <!-- iPad (Retina) -->
+  <link href="http://lungo.tapquo.com/resources/icon-144.png" sizes="144x144" rel="apple-touch-icon">
+  <link href="http://lungo.tapquo.com/resources/startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: portrait)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+  <link href="http://lungo.tapquo.com/resources/startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: landscape)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+  <!-- Lungo - Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="components/lungo/lungo.css">
+  <link rel="stylesheet" href="components/lungo/lungo.icon.brand.css">
+  <link rel="stylesheet" href="components/lungo/lungo.icon.css">
+  <link rel="stylesheet" href="components/lungo/theme.lungo.css">
+</head>
+
+<body class="app">
+
+  <section>
+    <header>
+      <nav>
+        <a href="#menu-aside" data-router="aside" data-icon="menu"></a>
+      </nav>
+
+
+      <div class="title centered">LUNGOJS</div>
+
+      
+    </header>
+
+    <!-- <nav class="groupbar">
+      <a href="#home" data-router="article" class="active">Home</a>
+    </nav> -->
+
+    <footer>
+      <nav>
+        <a href="#home" data-router="article" class="active" data-icon="home"></a>
+      </nav>
+    </footer>
+
+    <article id="home" class="list scroll indented active">
+      <ul>
+
+        <li class="p-0">
+          <div class="container-fluid p-0 mt-0">
+              <div class="col-xs-12 ">
+                <nav clas >
+                  <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active" id="nav-matagalpa-tab" data-toggle="tab" href="#nav-matagalpa"
+                      role="tab" aria-controls="nav-matagalpa" aria-selected="true">Matagalpa</a>
+                    <a class="nav-item nav-link" id="nav-esteli-tab" data-toggle="tab" href="#nav-esteli" role="tab"
+                      aria-controls="nav-esteli" aria-selected="false">Estelí</a>
+                    <a class="nav-item nav-link" id="nav-jinotega-tab" data-toggle="tab" href="#nav-jinotega" role="tab"
+                      aria-controls="nav-jinotega" aria-selected="false">Jinotega</a>
+                    <a class="nav-item nav-link" id="nav-madriz-tab" data-toggle="tab" href="#nav-madriz" role="tab"
+                      aria-controls="nav-madriz" aria-selected="false">Madriz</a>
+                    <a class="nav-item nav-link" id="nav-nuevaS-tab" data-toggle="tab" href="#nav-nuevaS" role="tab"
+                      aria-controls="nav-nuevaS" aria-selected="false">NuevaS</a>
+                  </div>
+                </nav>
+                <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+
+
+                  <div class="tab-pane fade show active" id="nav-matagalpa" role="tabpanel"
+                    aria-labelledby="nav-matagalpa-tab">
+
+                    <!-- Jumbotron -->
+                    <div class="card card-image img-matagalpa">
+                      <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                        <div class="py-5">
+
+                          <!-- Content -->
+                          <h5 class="h5 text-white"><i class="fas fa-route"></i> MATAGALPA</h5>
+                          <h2 class="card-title h2 my-4 py-2">La ruta del café</h2>
+                          <p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique soluta eum sunt corporis quam explicabo autem, eius nostrum enim atque ipsum esse nisi modi totam eos quidem quaerat quo! Quod mollitia facere quo eaque debitis in porro illum rem omnis nemo vitae iusto quidem, dolorem hic corporis ea, tempora, quasi eveniet! Facere minima animi sit consectetur officiis enim. Odio odit cupiditate, ipsum quod voluptatibus exercitationem totam? Aliquid deleniti sint harum veniam ipsa maxime quae nulla quo eveniet! Ut necessitatibus totam possimus, nam dolorem fugit nesciunt natus veritatis pariatur facere temporibus dicta consequatur tempore nisi corporis iste libero maiores sapiente sed.</p>
+                         <a href="#matagalpa" data-router="article">
+                           <button class="btn trasnparent border text-white"><i class="fas fa-clone left"></i>Conocer un poco</button>
+                         </a>
+                          <!-- <button type="button" class="btn btn-primary btn-rounded"  href="#matagalpa" data-router="article">Primary</button> -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Jumbotron -->
+                    
+         
+                    </div>
+
+                  <div class="tab-pane fade" id="nav-esteli" role="tabpanel" aria-labelledby="nav-esteli-tab">
+                    <!-- Jumbotron -->
+                    <div class="card card-image img-esteli">
+                      <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                        <div class="py-5">
+
+                          <!-- Content -->
+                          <h5 class="h5 text-white"><i class="fas fa-route"></i> ESTELI</h5>
+                          <h2 class="card-title h2 my-4 py-2">La ruta del café</h2>
+                          <p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique soluta eum sunt corporis quam explicabo autem, eius nostrum enim atque ipsum esse nisi modi totam eos quidem quaerat quo! Quod mollitia facere quo eaque debitis in porro illum rem omnis nemo vitae iusto quidem, dolorem hic corporis ea, tempora, quasi eveniet! Facere minima animi sit consectetur officiis enim. Odio odit cupiditate, ipsum quod voluptatibus exercitationem totam? Aliquid deleniti sint harum veniam ipsa maxime quae nulla quo eveniet! Ut necessitatibus totam possimus, nam dolorem fugit nesciunt natus veritatis pariatur facere temporibus dicta consequatur tempore nisi corporis iste libero maiores sapiente sed.</p>
+                         <a href="#esteli" data-router="article">
+                           <button class="btn trasnparent border text-white"><i class="fas fa-clone left"></i>Conocer un poco</button>
+                         </a>
+                          <!-- <button type="button" class="btn btn-primary btn-rounded"  href="#matagalpa" data-router="article">Primary</button> -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Jumbotron -->
+                  </div>
+
+
+                  <div class="tab-pane fade" id="nav-jinotega" role="tabpanel" aria-labelledby="nav-jinotega-tab">
+                    <!-- Jumbotron -->
+                    <div class="card card-image img-jinotega">
+                      <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                        <div class="py-5">
+
+                          <!-- Content -->
+                          <h5 class="h5 text-white"><i class="fas fa-route"></i> JINOTEGA</h5>
+                          <h2 class="card-title h2 my-4 py-2">La ruta del café</h2>
+                          <p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique soluta eum sunt corporis quam explicabo autem, eius nostrum enim atque ipsum esse nisi modi totam eos quidem quaerat quo! Quod mollitia facere quo eaque debitis in porro illum rem omnis nemo vitae iusto quidem, dolorem hic corporis ea, tempora, quasi eveniet! Facere minima animi sit consectetur officiis enim. Odio odit cupiditate, ipsum quod voluptatibus exercitationem totam? Aliquid deleniti sint harum veniam ipsa maxime quae nulla quo eveniet! Ut necessitatibus totam possimus, nam dolorem fugit nesciunt natus veritatis pariatur facere temporibus dicta consequatur tempore nisi corporis iste libero maiores sapiente sed.</p>
+                         <a href="#jinotega" data-router="article">
+                           <button class="btn trasnparent border text-white"><i class="fas fa-clone left"></i>Conocer un poco</button>
+                         </a>
+                          <!-- <button type="button" class="btn btn-primary btn-rounded"  href="#matagalpa" data-router="article">Primary</button> -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Jumbotron -->
+                  </div>
+
+
+                  <div class="tab-pane fade" id="nav-madriz" role="tabpanel" aria-labelledby="nav-madriz-tab">
+                   <!-- Jumbotron -->
+                   <div class="card card-image img-madriz">
+                    <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                      <div class="py-5">
+
+                        <!-- Content -->
+                        <h5 class="h5 text-white"><i class="fas fa-route"></i> MADRIZ</h5>
+                        <h2 class="card-title h2 my-4 py-2">La ruta del café</h2>
+                        <p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique soluta eum sunt corporis quam explicabo autem, eius nostrum enim atque ipsum esse nisi modi totam eos quidem quaerat quo! Quod mollitia facere quo eaque debitis in porro illum rem omnis nemo vitae iusto quidem, dolorem hic corporis ea, tempora, quasi eveniet! Facere minima animi sit consectetur officiis enim. Odio odit cupiditate, ipsum quod voluptatibus exercitationem totam? Aliquid deleniti sint harum veniam ipsa maxime quae nulla quo eveniet! Ut necessitatibus totam possimus, nam dolorem fugit nesciunt natus veritatis pariatur facere temporibus dicta consequatur tempore nisi corporis iste libero maiores sapiente sed.</p>
+                       <a href="#madriz" data-router="article">
+                         <button class="btn trasnparent border text-white"><i class="fas fa-clone left"></i>Conocer un poco</button>
+                       </a>
+                        <!-- <button type="button" class="btn btn-primary btn-rounded"  href="#matagalpa" data-router="article">Primary</button> -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Jumbotron -->
+                  </div>
+
+
+                  <div class="tab-pane fade" id="nav-nuevaS" role="tabpanel" aria-labelledby="nav-nuevaS-tab">
+                    <!-- Jumbotron -->
+                    <div class="card card-image img-nuevaS">
+                      <div class="text-white text-center rgba-stylish-strong py-5 px-4">
+                        <div class="py-5">
+
+                          <!-- Content -->
+                          <h5 class="h5 text-white"><i class="fas fa-route"></i> NUEVA SEGOVIA</h5>
+                          <h2 class="card-title h2 my-4 py-2">La ruta del café</h2>
+                          <p class="mb-4 pb-2 px-md-5 mx-md-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique soluta eum sunt corporis quam explicabo autem, eius nostrum enim atque ipsum esse nisi modi totam eos quidem quaerat quo! Quod mollitia facere quo eaque debitis in porro illum rem omnis nemo vitae iusto quidem, dolorem hic corporis ea, tempora, quasi eveniet! Facere minima animi sit consectetur officiis enim. Odio odit cupiditate, ipsum quod voluptatibus exercitationem totam? Aliquid deleniti sint harum veniam ipsa maxime quae nulla quo eveniet! Ut necessitatibus totam possimus, nam dolorem fugit nesciunt natus veritatis pariatur facere temporibus dicta consequatur tempore nisi corporis iste libero maiores sapiente sed.</p>
+                         <a href="#nuevaS" data-router="article">
+                           <button class="btn trasnparent border text-white"><i class="fas fa-clone left"></i>Conocer un poco</button>
+                         </a>
+                          <!-- <button type="button" class="btn btn-primary btn-rounded"  href="#matagalpa" data-router="article">Primary</button> -->
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Jumbotron -->
+                  </div>
+                </div>
+
+              </div>
+          </div>
+          </div>
+          </div>
+        </li>
+
+        <li class="p-0 second-content-matagal">
+
+          <div class="container my-5 p-0 ">
+
+
+            <!--Section: Content-->
+            <div class="text-center dark-grey-text">
+          
+              <!-- Section heading -->
+              <h2 class="font-weight-bold mb-4 pb-2 h1">Por qué debes visitarlo?</h2>
+              <!-- Section description -->
+              <p class="lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          
+              <!-- Grid row -->
+              <div class="row">
+          
+                <!-- Grid column -->
+                <div class="col-md-4 mb-4">
+          
+                  <i class="fas fa-chart-area fa-3x red-text"></i>
+                  <h5 class="font-weight-bold my-4">Analytics</h5>
+                  <p class="grey-text mb-md-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                    maiores aperiam minima assumenda deleniti hic.
+                  </p>
+          
+                </div>
+                <!-- Grid column -->
+          
+                <!-- Grid column -->
+                <div class="col-md-4 mb-4">
+          
+                  <i class="fas fa-book fa-3x cyan-text"></i>
+                  <h5 class="font-weight-bold my-4">Tutorials</h5>
+                  <p class="grey-text mb-md-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+                    maiores aperiam minima assumenda deleniti hic.
+                  </p>
+          
+                </div>
+                <!-- Grid column -->
+          
+                <!-- Grid column -->
+                <div class="col-md-4 mb-4">
+          
+                  <i class="far fa-comments fa-3x orange-text"></i>
+                  <h5 class="font-weight-bold my-4">Support</h5>
+                  <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores
+                    aperiam minima assumenda deleniti hic.
+                  </p>
+          
+                </div>
+                <!-- Grid column -->
+          
+              </div>
+              <!-- Grid row -->
+          
+            </div>
+            <!--Section: Content-->
+          
+          
+          </div>
+
+
+        </li>
+
+
+
+        <li class="p-0 container">
+          <div class="container-fluid mt-3 mb-5">
+
+            <div style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/Work/12-col/img%20(1).jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+              
+              <!-- Modal -->
+              <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                      <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/7MUISDJ5ZZ4https://www.youtube.com/watch?v=qeMFqkcPYcg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="mask rgba-black-strong py-5">
+          
+                <div class="container text-center my-5">
+          
+                  <h3 class="font-weight-bold text-center white-text pb-2">Mira el Video</h3>
+                  <hr class="w-header hr-light my-4">
+                  <p class="lead text-center white-text pt-2 mb-5">Aprende y conoce un poco de la cultura y tradiciones de este hermoso lugar!!</p>
+          
+                  <button id="play" class="btn-floating btn-cyan btn-lg" data-toggle="modal" data-target="#modal1"><i class="fas fa-play"></i></button>
+          
+                </div>
+          
+              </div>
+          
+            </div>
+          
+          </div>
+
+          
+        </li>
+      </ul>
+
+    </article>
+
+
+    <article id="matagalpa" class="list scroll indented container-fluid p-0">
+
+      <h6 class="section-title h1 text-dark text-center mt-5">MATAGALPA</h6>
+
+      <!-- Tabs -->
+      <div id="tabs" class="mt-1 text-dark">
+        <div class="container px-0">
+          <div class="row">
+            <div class="col-xs-12 ">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active text-dark" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                    role="tab" aria-controls="nav-home" aria-selected="true">Donde A</a>
+                  <a class="nav-item nav-link text-dark" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                    role="tab" aria-controls="nav-profile" aria-selected="false">Donde C</a>
+                  <a class="nav-item nav-link text-dark" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                    role="tab" aria-controls="nav-contact" aria-selected="false">Donde P</a>
+                </div>
+              </nav>
+              <div class="tab-content py-3 p-0 px-sm-0" id="nav-tabContent">
+                <div class="tab-pane fade show active p-0" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <div class="container mt-5">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+                  
+                      <!-- Section heading -->
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Recent posts</h2>
+                      <!-- Section description -->
+                      <p class="text-center mx-auto w-responsive mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+                  
+                      <!-- Grid row -->
+                      <div class="row align-items-center">
+                  
+                        <!-- Grid column -->
+                        <div class="col-lg-5 col-xl-4">
+                  
+                          <!-- Featured image -->
+                          <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
+                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Sample image">
+                            <a>
+                              <div class="mask rgba-white-slight"></div>
+                            </a>
+                          </div>
+                  
+                        </div>
+                        <!-- Grid column -->
+                  
+                        <!-- Grid column -->
+                        <div class="col-lg-7 col-xl-8">
+                  
+                          <!-- Post title -->
+                          <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
+                          <!-- Excerpt -->
+                          <p class="dark-grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                            quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus
+                            et aut officiis cum soluta nobis est eligendi placeat facere aut rerum.</p>
+                          <!-- Post data -->
+                          <p>by <a class="font-weight-bold">Jessica Clark</a>, 19/04/2018</p>
+                          <!-- Read more button -->
+                          <a class="btn btn-primary btn-md mx-0 btn-rounded">Read more</a>
+                  
+                        </div>
+                        <!-- Grid column -->
+                  
+                      </div>
+                      <!-- Grid row -->
+                  
+                      <hr class="my-5">
+                  
+                    </div>
+                    <!--Section: Content-->
+                  
+                  
+                  </div>
+
+                  <div class="container my-5 p-0 transparent">
+
+
+                    <!--Section: Content-->
+                    <div class="p-0 mx-md-5 text-center text-lg-left dark-grey-text">
+                
+                      <!--Grid row-->
+                      <div class="row mb-4">
+                
+                        <!--Grid column-->
+                        <div class="col-md-8 mb-4 mb-md-0">
+                
+                          <h3 class="h3">Why is it so great?</h3>
+                
+                          <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
+                            numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
+                
+                        </div>
+                        <!--Grid column-->
+                
+                        <!--Grid column-->
+                        <div class="col-md-4 mb-4 mb-md-0">
+                
+                          <a class="btn btn-green btn-md mt-md-5" href="#" role="button">Explora<i class="fa fa-travel ml-1"></i></a>
+                
+                        </div>
+                        <!--Grid column-->
+                
+                      </div>
+                      <!--Grid row-->
+                
+                      <!--Image-->
+                      <div class="view overlay z-depth-1-half">
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" class="img-fluid" alt="">
+                        <a href="#">
+                          <div class="mask rgba-white-light"></div>
+                        </a>
+                      </div>
+                
+                    </div>
+                    <!--Section: Content-->
+                
+                
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <div class="container mt-5 p-0">
+                    <!--Section: Content-->
+                    <div>
+
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo Comer?</h2>
+
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                        <div class="container-fluid z-depth-1 my-5 p-0">
+  
+
+                          <!-- Section: Block Content -->
+                        
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                              aria-hidden="true">
+                              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/7MUISDJ5ZZ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        
+                            <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">video</h6>
+                            <h3 class="font-weight-bold text-center dark-grey-text pb-2">Explore</h3>
+                            <hr class="w-header my-4">
+                            <p class="lead text-center text-muted pt-2 mb-5">Explore the best MDB template in the market in a short 1-minute video.</p>
+                        
+                            <div class="row">
+                              <div class="col-md-12 mx-auto mb-4 d-flex justify-content-center">
+                        
+                                  <div class="view z-depth-1 rounded">
+                                    <img class="rounded img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(29).jpg" alt="Video title">
+                                    <div class="mask flex-center rgba-white-light">
+                                      <a id="play" class="btn-floating btn-danger btn-lg" data-toggle="modal" data-target="#modal1"><i class="fas fa-play"></i></a>
+                                    </div>
+                                  </div>
+                        
+                              </div>
+                            </div>
+                        
+                          <!-- Section: Block Content -->
+                        
+                          <br>
+                          <div class="container mt-5 pt-5 pb-3 px-5 z-depth-1">
+  
+                            <!--Section: Content-->
+                            <div class="text-center dark-grey-text">
+                              
+                              <div class="row text-center d-flex justify-content-center my-5">
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-envelope-open fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Subscription Ready</h5>
+                                  <p class="text-muted mb-0">MailChimp integration included</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-layer-group fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Block Variety</h5>
+                                  <p class="text-muted mb-0">Develop pages like lego</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-brush fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Color Pallet</h5>
+                                  <p class="text-muted mb-0">Dozen of colors for elements</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-puzzle-piece fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Page Builder</h5>
+                                  <p class="text-muted mb-0">Drag and drop page design</p>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <!--Section: Content-->
+                          
+                          
+                          </div>      
+                          
+                        </div>
+
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-8 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h2 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h2>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/0a/58/d1/73/restaurante-la-finca.jpg"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://www.excelenciasgourmet.com/sites/default/files/styles/slideshow_large/public/2019-07/La%20Casina.jpg?itok=HBf9Y2g6"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+                    <!--Section: Content-->
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo pasear?</h2>
+                  <!-- Section description -->
+                  <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  
+                    <div class="container py-5 my-5 z-depth-1">
+                      <div class="p-md-3 mx-md-5 text-lg-left">
+                        <div class="row">
+                          <div class="col-12">
+                            <h2 class="font-weight-bold mb-3">Features</h2>
+                            <p class="lead py-3">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                              in reprehenderit in voluptate velit esse cillum dolore eu
+                              fugiat.
+                            </p>
+                            <a class="blue-text font-weight-bold" href="#">Learn more 
+                              <i class="fa fa-chevron-right pl-1"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="row mt-5">
+                          <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-map-marker-alt fa-3x indigo-text mb-4"></i>
+                              <h4 class="font-weight-bold">Feature 1</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="far fa-map fa-3x pink-text mb-4"></i>
+                              <h4 class="font-weight-bold">Feature 2</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-globe-africa fa-3x amber-text mb-4"></i>
+                               <h4 class="font-weight-bold">Feature 3</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-street-view fa-3x green-text mb-4"></i>
+                               <h4 class="font-weight-bold">Feature 4</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="container my-5">
+
+
+                      <!-- Section: Block Content -->
+                      <div class="dark-grey-text text-center">
+                    
+                        <h3 class="font-weight-bold mb-4 pb-2">Our best projects</h3>
+                        <p class="text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+                    
+                        <!-- Grid row -->
+                        <div class="row">
+                    
+                          <!-- Grid column -->
+                          <div class="col-md-6 mb-4">
+                    
+                            <div class="view overlay rounded z-depth-1">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" class="img-fluid" alt="Sample project image">
+                              <a>
+                                <div class="mask rgba-white-slight"></div>
+                              </a>
+                            </div>
+                    
+                            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                              <a class="orange-text">
+                                <h6 class="font-weight-bold mt-2 mb-3"><i class="fas fa-chart-line pr-2"></i>Marketing</h6>
+                              </a>
+                              <h4 class="font-weight-bold mb-3">Title of the news</h4>
+                              <p class="text-muted">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, adipisci velit cupidatat proident voluptatem quia numquam.</p>
+                              <a class="btn btn-success btn-rounded btn-md"> View more</a>
+                            </div>
+                    
+                          </div>
+                          <!-- Grid column -->
+                    
+                          <!-- Grid column -->
+                          <div class="col-md-6 mb-4">
+                    
+                            <div class="view overlay rounded z-depth-1">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/images/19.jpg" class="img-fluid" alt="Sample project image">
+                              <a>
+                                <div class="mask rgba-white-slight"></div>
+                              </a>
+                            </div>
+                    
+                            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                              <a class="blue-text">
+                                <h6 class="font-weight-bold mt-2 mb-3"><i class="fas fa-eye pr-2"></i>Entertainment</h6>
+                              </a>
+                              <h4 class="font-weight-bold mb-3">Title of the news</h4>
+                              <p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid, aspernatur aut odit aut fugit.</p>
+                              <a class="btn btn-success btn-rounded btn-md"> View more</a>
+                            </div>
+                    
+                          </div>
+                          <!-- Grid column -->
+                    
+                        </div>
+                        <!-- Grid row -->
+                    
+                      </div>
+                      <!-- Section: Block Content -->
+                    
+                    
+                    </div>
+                  
+                    <div class="container my-5 p-0">
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+
+
+                      <!-- Grid row -->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">International</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flask deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Experimental</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-md-0 mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-glass-martini deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Relaxing</h5>
+                              <p class="grey-text mb-md-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 text-center">
+                          <img class="img-fluid"
+                            src="https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Sample image">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="far fa-2x fa-heart deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Beloved</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-bolt deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Rapid</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-magic deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Magical</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Tabs -->
+    </article>
+
+    <article id="esteli" class="list scroll indented container-fluid p-0">
+
+      <h6 class="section-title h1 text-dark text-center mt-5">ESTELI</h6>
+
+
+      <!-- Tabs -->
+      <div id="tabs" class="mt-5 text-dark">
+        <div class="container px-0">
+          <div class="row">
+            <div class="col-xs-12 ">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active text-dark" id="nav-1-tab" data-toggle="tab" href="#nav-1"
+                    role="tab" aria-controls="nav-home" aria-selected="true">Donde A</a>
+                  <a class="nav-item nav-link text-dark" id="nav-2-tab" data-toggle="tab" href="#nav-2" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">Donde C</a>
+                  <a class="nav-item nav-link text-dark" id="nav-3-tab" data-toggle="tab" href="#nav-3" role="tab"
+                    aria-controls="nav-contact" aria-selected="false">Donde P</a>
+                </div>
+              </nav>
+              <div class="tab-content py-3 p-0 px-sm-0" id="nav-tabContent">
+                <div class="tab-pane fade show active p-0" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
+                  <div class="container mt-5">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+                  
+                      <!-- Section heading -->
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Recent posts</h2>
+                      <!-- Section description -->
+                      <p class="text-center mx-auto w-responsive mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+                  
+                      <!-- Grid row -->
+                      <div class="row align-items-center">
+                  
+                        <!-- Grid column -->
+                        <div class="col-lg-5 col-xl-4">
+                  
+                          <!-- Featured image -->
+                          <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
+                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Sample image">
+                            <a>
+                              <div class="mask rgba-white-slight"></div>
+                            </a>
+                          </div>
+                  
+                        </div>
+                        <!-- Grid column -->
+                  
+                        <!-- Grid column -->
+                        <div class="col-lg-7 col-xl-8">
+                  
+                          <!-- Post title -->
+                          <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
+                          <!-- Excerpt -->
+                          <p class="dark-grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                            quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus
+                            et aut officiis cum soluta nobis est eligendi placeat facere aut rerum.</p>
+                          <!-- Post data -->
+                          <p>by <a class="font-weight-bold">Jessica Clark</a>, 19/04/2018</p>
+                          <!-- Read more button -->
+                          <a class="btn btn-primary btn-md mx-0 btn-rounded">Read more</a>
+                  
+                        </div>
+                        <!-- Grid column -->
+                  
+                      </div>
+                      <!-- Grid row -->
+                  
+                      <hr class="my-5">
+                  
+                    </div>
+                    <!--Section: Content-->
+                  
+                  
+                  </div>
+
+                  <div class="container my-5 p-0 transparent">
+
+
+                    <!--Section: Content-->
+                    <div class="p-0 mx-md-5 text-center text-lg-left dark-grey-text">
+                
+                      <!--Grid row-->
+                      <div class="row mb-4">
+                
+                        <!--Grid column-->
+                        <div class="col-md-8 mb-4 mb-md-0">
+                
+                          <h3 class="h3">Why is it so great?</h3>
+                
+                          <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
+                            numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
+                
+                        </div>
+                        <!--Grid column-->
+                
+                        <!--Grid column-->
+                        <div class="col-md-4 mb-4 mb-md-0">
+                
+                          <a class="btn btn-green btn-md mt-md-5" href="#" role="button">Explora<i class="fa fa-travel ml-1"></i></a>
+                
+                        </div>
+                        <!--Grid column-->
+                
+                      </div>
+                      <!--Grid row-->
+                
+                      <!--Image-->
+                      <div class="view overlay z-depth-1-half">
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" class="img-fluid" alt="">
+                        <a href="#">
+                          <div class="mask rgba-white-light"></div>
+                        </a>
+                      </div>
+                
+                    </div>
+                    <!--Section: Content-->
+                
+                
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
+                  <div class="container mt-5 p-0">
+                    <!--Section: Content-->
+                    <div>
+
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo Comer?</h2>
+
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                        <div class="container-fluid z-depth-1 my-5 p-0">
+  
+
+                          <!-- Section: Block Content -->
+                        
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                              aria-hidden="true">
+                              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/7MUISDJ5ZZ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        
+                            <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">video</h6>
+                            <h3 class="font-weight-bold text-center dark-grey-text pb-2">Explore</h3>
+                            <hr class="w-header my-4">
+                            <p class="lead text-center text-muted pt-2 mb-5">Explore the best MDB template in the market in a short 1-minute video.</p>
+                        
+                            <div class="row">
+                              <div class="col-md-12 mx-auto mb-4 d-flex justify-content-center">
+                        
+                                  <div class="view z-depth-1 rounded">
+                                    <img class="rounded img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(29).jpg" alt="Video title">
+                                    <div class="mask flex-center rgba-white-light">
+                                      <a id="play" class="btn-floating btn-danger btn-lg" data-toggle="modal" data-target="#modal1"><i class="fas fa-play"></i></a>
+                                    </div>
+                                  </div>
+                        
+                              </div>
+                            </div>
+                        
+                          <!-- Section: Block Content -->
+                        
+                          <br>
+                          <div class="container mt-5 pt-5 pb-3 px-5 z-depth-1">
+  
+                            <!--Section: Content-->
+                            <div class="text-center dark-grey-text">
+                              
+                              <div class="row text-center d-flex justify-content-center my-5">
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-envelope-open fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Subscription Ready</h5>
+                                  <p class="text-muted mb-0">MailChimp integration included</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-layer-group fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Block Variety</h5>
+                                  <p class="text-muted mb-0">Develop pages like lego</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-brush fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Color Pallet</h5>
+                                  <p class="text-muted mb-0">Dozen of colors for elements</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-puzzle-piece fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Page Builder</h5>
+                                  <p class="text-muted mb-0">Drag and drop page design</p>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <!--Section: Content-->
+                          
+                          
+                          </div>      
+                          
+                        </div>
+
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-8 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h2 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h2>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/0a/58/d1/73/restaurante-la-finca.jpg"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://www.excelenciasgourmet.com/sites/default/files/styles/slideshow_large/public/2019-07/La%20Casina.jpg?itok=HBf9Y2g6"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+                    <!--Section: Content-->
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
+                  <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo pasear?</h2>
+                  <!-- Section description -->
+                  <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  
+                    <div class="container py-5 my-5 z-depth-1">
+                      <div class="p-md-3 mx-md-5 text-lg-left">
+                        <div class="row">
+                          <div class="col-12">
+                            <h2 class="font-weight-bold mb-3">Features</h2>
+                            <p class="lead py-3">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                              in reprehenderit in voluptate velit esse cillum dolore eu
+                              fugiat.
+                            </p>
+                            <a class="blue-text font-weight-bold" href="#">Learn more 
+                              <i class="fa fa-chevron-right pl-1"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="row mt-5">
+                          <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-map-marker-alt fa-3x indigo-text mb-4"></i>
+                              <h4 class="font-weight-bold">Feature 1</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="far fa-map fa-3x pink-text mb-4"></i>
+                              <h4 class="font-weight-bold">Feature 2</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-globe-africa fa-3x amber-text mb-4"></i>
+                               <h4 class="font-weight-bold">Feature 3</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-street-view fa-3x green-text mb-4"></i>
+                               <h4 class="font-weight-bold">Feature 4</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="container my-5">
+
+
+                      <!-- Section: Block Content -->
+                      <div class="dark-grey-text text-center">
+                    
+                        <h3 class="font-weight-bold mb-4 pb-2">Our best projects</h3>
+                        <p class="text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+                    
+                        <!-- Grid row -->
+                        <div class="row">
+                    
+                          <!-- Grid column -->
+                          <div class="col-md-6 mb-4">
+                    
+                            <div class="view overlay rounded z-depth-1">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" class="img-fluid" alt="Sample project image">
+                              <a>
+                                <div class="mask rgba-white-slight"></div>
+                              </a>
+                            </div>
+                    
+                            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                              <a class="orange-text">
+                                <h6 class="font-weight-bold mt-2 mb-3"><i class="fas fa-chart-line pr-2"></i>Marketing</h6>
+                              </a>
+                              <h4 class="font-weight-bold mb-3">Title of the news</h4>
+                              <p class="text-muted">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, adipisci velit cupidatat proident voluptatem quia numquam.</p>
+                              <a class="btn btn-success btn-rounded btn-md"> View more</a>
+                            </div>
+                    
+                          </div>
+                          <!-- Grid column -->
+                    
+                          <!-- Grid column -->
+                          <div class="col-md-6 mb-4">
+                    
+                            <div class="view overlay rounded z-depth-1">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/images/19.jpg" class="img-fluid" alt="Sample project image">
+                              <a>
+                                <div class="mask rgba-white-slight"></div>
+                              </a>
+                            </div>
+                    
+                            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                              <a class="blue-text">
+                                <h6 class="font-weight-bold mt-2 mb-3"><i class="fas fa-eye pr-2"></i>Entertainment</h6>
+                              </a>
+                              <h4 class="font-weight-bold mb-3">Title of the news</h4>
+                              <p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid, aspernatur aut odit aut fugit.</p>
+                              <a class="btn btn-success btn-rounded btn-md"> View more</a>
+                            </div>
+                    
+                          </div>
+                          <!-- Grid column -->
+                    
+                        </div>
+                        <!-- Grid row -->
+                    
+                      </div>
+                      <!-- Section: Block Content -->
+                    
+                    
+                    </div>
+                  
+                    <div class="container my-5 p-0">
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+
+
+                      <!-- Grid row -->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">International</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flask deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Experimental</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-md-0 mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-glass-martini deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Relaxing</h5>
+                              <p class="grey-text mb-md-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 text-center">
+                          <img class="img-fluid"
+                            src="https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Sample image">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="far fa-2x fa-heart deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Beloved</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-bolt deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Rapid</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-magic deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Magical</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Tabs -->
+    </article>
+
+
+    <article id="jinotega" class="list scroll indented container-fluid p-0">
+
+      <h6 class="section-title h1 text-dark text-center mt-5"> JINOTEGA</h6>
+
+
+      <!-- Tabs -->
+      <div id="tabs" class="mt-5 text-dark">
+        <div class="container px-0">
+          <div class="row">
+            <div class="col-xs-12 ">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active text-dark" id="nav-4-tab" data-toggle="tab" href="#nav-4"
+                    role="tab" aria-controls="nav-home" aria-selected="true">Donde A</a>
+                  <a class="nav-item nav-link text-dark" id="nav-5-tab" data-toggle="tab" href="#nav-5" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">Donde C</a>
+                  <a class="nav-item nav-link text-dark" id="nav-6-tab" data-toggle="tab" href="#nav-6" role="tab"
+                    aria-controls="nav-contact" aria-selected="false">Donde P</a>
+                </div>
+              </nav>
+              <div class="tab-content py-3 p-0 px-sm-0" id="nav-tabContent">
+                <div class="tab-pane fade show active p-0" id="nav-4" role="tabpanel" aria-labelledby="nav-4-tab">
+                  
+                  <div class="container mt-5">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+                  
+                      <!-- Section heading -->
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Recent posts</h2>
+                      <!-- Section description -->
+                      <p class="text-center mx-auto w-responsive mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+                  
+                      <!-- Grid row -->
+                      <div class="row align-items-center">
+                  
+                        <!-- Grid column -->
+                        <div class="col-lg-5 col-xl-4">
+                  
+                          <!-- Featured image -->
+                          <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
+                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Sample image">
+                            <a>
+                              <div class="mask rgba-white-slight"></div>
+                            </a>
+                          </div>
+                  
+                        </div>
+                        <!-- Grid column -->
+                  
+                        <!-- Grid column -->
+                        <div class="col-lg-7 col-xl-8">
+                  
+                          <!-- Post title -->
+                          <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
+                          <!-- Excerpt -->
+                          <p class="dark-grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                            quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus
+                            et aut officiis cum soluta nobis est eligendi placeat facere aut rerum.</p>
+                          <!-- Post data -->
+                          <p>by <a class="font-weight-bold">Jessica Clark</a>, 19/04/2018</p>
+                          <!-- Read more button -->
+                          <a class="btn btn-primary btn-md mx-0 btn-rounded">Read more</a>
+                  
+                        </div>
+                        <!-- Grid column -->
+                  
+                      </div>
+                      <!-- Grid row -->
+                  
+                      <hr class="my-5">
+                  
+                    </div>
+                    <!--Section: Content-->
+                  
+                  
+                  </div>
+
+                  <div class="container my-5 p-0 transparent">
+
+
+                    <!--Section: Content-->
+                    <div class="p-0 mx-md-5 text-center text-lg-left dark-grey-text">
+                
+                      <!--Grid row-->
+                      <div class="row mb-4">
+                
+                        <!--Grid column-->
+                        <div class="col-md-8 mb-4 mb-md-0">
+                
+                          <h3 class="h3">Why is it so great?</h3>
+                
+                          <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
+                            numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
+                
+                        </div>
+                        <!--Grid column-->
+                
+                        <!--Grid column-->
+                        <div class="col-md-4 mb-4 mb-md-0">
+                
+                          <a class="btn btn-green btn-md mt-md-5" href="#" role="button">Explora<i class="fa fa-travel ml-1"></i></a>
+                
+                        </div>
+                        <!--Grid column-->
+                
+                      </div>
+                      <!--Grid row-->
+                
+                      <!--Image-->
+                      <div class="view overlay z-depth-1-half">
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" class="img-fluid" alt="">
+                        <a href="#">
+                          <div class="mask rgba-white-light"></div>
+                        </a>
+                      </div>
+                
+                    </div>
+                    <!--Section: Content-->
+                
+                
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-5" role="tabpanel" aria-labelledby="nav-5-tab">
+                  <div class="container mt-5 p-0">
+                    <!--Section: Content-->
+                    <div>
+
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo Comer?</h2>
+
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                        <div class="container-fluid z-depth-1 my-5 p-0">
+  
+
+                          <!-- Section: Block Content -->
+                        
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                              aria-hidden="true">
+                              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/7MUISDJ5ZZ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        
+                            <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">video</h6>
+                            <h3 class="font-weight-bold text-center dark-grey-text pb-2">Explore</h3>
+                            <hr class="w-header my-4">
+                            <p class="lead text-center text-muted pt-2 mb-5">Explore the best MDB template in the market in a short 1-minute video.</p>
+                        
+                            <div class="row">
+                              <div class="col-md-12 mx-auto mb-4 d-flex justify-content-center">
+                        
+                                  <div class="view z-depth-1 rounded">
+                                    <img class="rounded img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(29).jpg" alt="Video title">
+                                    <div class="mask flex-center rgba-white-light">
+                                      <a id="play" class="btn-floating btn-danger btn-lg" data-toggle="modal" data-target="#modal1"><i class="fas fa-play"></i></a>
+                                    </div>
+                                  </div>
+                        
+                              </div>
+                            </div>
+                        
+                          <!-- Section: Block Content -->
+                        
+                          <br>
+                          <div class="container mt-5 pt-5 pb-3 px-5 z-depth-1">
+  
+                            <!--Section: Content-->
+                            <div class="text-center dark-grey-text">
+                              
+                              <div class="row text-center d-flex justify-content-center my-5">
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-envelope-open fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Subscription Ready</h5>
+                                  <p class="text-muted mb-0">MailChimp integration included</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-layer-group fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Block Variety</h5>
+                                  <p class="text-muted mb-0">Develop pages like lego</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-brush fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Color Pallet</h5>
+                                  <p class="text-muted mb-0">Dozen of colors for elements</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-puzzle-piece fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Page Builder</h5>
+                                  <p class="text-muted mb-0">Drag and drop page design</p>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <!--Section: Content-->
+                          
+                          
+                          </div>      
+                          
+                        </div>
+
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-8 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h2 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h2>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/0a/58/d1/73/restaurante-la-finca.jpg"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://www.excelenciasgourmet.com/sites/default/files/styles/slideshow_large/public/2019-07/La%20Casina.jpg?itok=HBf9Y2g6"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+                    <!--Section: Content-->
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-6" role="tabpanel" aria-labelledby="nav-6-tab">
+                  <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo pasear?</h2>
+                  <!-- Section description -->
+                  <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  
+                    <div class="container py-5 my-5 z-depth-1">
+                      <div class="p-md-3 mx-md-5 text-lg-left">
+                        <div class="row">
+                          <div class="col-12">
+                            <h2 class="font-weight-bold mb-3">Features</h2>
+                            <p class="lead py-3">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                              in reprehenderit in voluptate velit esse cillum dolore eu
+                              fugiat.
+                            </p>
+                            <a class="blue-text font-weight-bold" href="#">Learn more 
+                              <i class="fa fa-chevron-right pl-1"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="row mt-5">
+                          <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-map-marker-alt fa-3x indigo-text mb-4"></i>
+                              <h4 class="font-weight-bold">Feature 1</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="far fa-map fa-3x pink-text mb-4"></i>
+                              <h4 class="font-weight-bold">Feature 2</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-globe-africa fa-3x amber-text mb-4"></i>
+                               <h4 class="font-weight-bold">Feature 3</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-street-view fa-3x green-text mb-4"></i>
+                               <h4 class="font-weight-bold">Feature 4</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="container my-5">
+
+
+                      <!-- Section: Block Content -->
+                      <div class="dark-grey-text text-center">
+                    
+                        <h3 class="font-weight-bold mb-4 pb-2">Our best projects</h3>
+                        <p class="text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+                    
+                        <!-- Grid row -->
+                        <div class="row">
+                    
+                          <!-- Grid column -->
+                          <div class="col-md-6 mb-4">
+                    
+                            <div class="view overlay rounded z-depth-1">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" class="img-fluid" alt="Sample project image">
+                              <a>
+                                <div class="mask rgba-white-slight"></div>
+                              </a>
+                            </div>
+                    
+                            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                              <a class="orange-text">
+                                <h6 class="font-weight-bold mt-2 mb-3"><i class="fas fa-chart-line pr-2"></i>Marketing</h6>
+                              </a>
+                              <h4 class="font-weight-bold mb-3">Title of the news</h4>
+                              <p class="text-muted">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, adipisci velit cupidatat proident voluptatem quia numquam.</p>
+                              <a class="btn btn-success btn-rounded btn-md"> View more</a>
+                            </div>
+                    
+                          </div>
+                          <!-- Grid column -->
+                    
+                          <!-- Grid column -->
+                          <div class="col-md-6 mb-4">
+                    
+                            <div class="view overlay rounded z-depth-1">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/images/19.jpg" class="img-fluid" alt="Sample project image">
+                              <a>
+                                <div class="mask rgba-white-slight"></div>
+                              </a>
+                            </div>
+                    
+                            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                              <a class="blue-text">
+                                <h6 class="font-weight-bold mt-2 mb-3"><i class="fas fa-eye pr-2"></i>Entertainment</h6>
+                              </a>
+                              <h4 class="font-weight-bold mb-3">Title of the news</h4>
+                              <p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid, aspernatur aut odit aut fugit.</p>
+                              <a class="btn btn-success btn-rounded btn-md"> View more</a>
+                            </div>
+                    
+                          </div>
+                          <!-- Grid column -->
+                    
+                        </div>
+                        <!-- Grid row -->
+                    
+                      </div>
+                      <!-- Section: Block Content -->
+                    
+                    
+                    </div>
+                  
+                    <div class="container my-5 p-0">
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+
+
+                      <!-- Grid row -->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">International</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flask deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Experimental</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-md-0 mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-glass-martini deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Relaxing</h5>
+                              <p class="grey-text mb-md-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 text-center">
+                          <img class="img-fluid"
+                            src="https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Sample image">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="far fa-2x fa-heart deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Beloved</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-bolt deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Rapid</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-magic deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Magical</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Tabs -->
+    </article>
+
+
+
+
+    <article id="madriz" class="list scroll indented container-fluid p-0">
+      <h6 class="section-title h1 text-dark text-center mt-5">MADRIZ</h6>
+      <!-- Tabs -->
+      <div id="tabs" class="mt-5 text-dark">
+        <div class="container px-0">
+          <div class="row">
+            <div class="col-xs-12 ">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active text-dark" id="nav-7-tab" data-toggle="tab" href="#nav-7"
+                    role="tab" aria-controls="nav-home" aria-selected="true">Donde A</a>
+                  <a class="nav-item nav-link text-dark" id="nav-8-tab" data-toggle="tab" href="#nav-8" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">Donde C</a>
+                  <a class="nav-item nav-link text-dark" id="nav-9-tab" data-toggle="tab" href="#nav-9" role="tab"
+                    aria-controls="nav-contact" aria-selected="false">Donde P</a>
+                </div>
+              </nav>
+              <div class="tab-content py-3 p-0 px-sm-0" id="nav-tabContent">
+                <div class="tab-pane fade show active p-0" id="nav-7" role="tabpanel" aria-labelledby="nav-7-tab">
+                 
+                  <div class="container mt-5">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+                  
+                      <!-- Section heading -->
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Recent posts</h2>
+                      <!-- Section description -->
+                      <p class="text-center mx-auto w-responsive mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+                  
+                      <!-- Grid row -->
+                      <div class="row align-items-center">
+                  
+                        <!-- Grid column -->
+                        <div class="col-lg-5 col-xl-4">
+                  
+                          <!-- Featured image -->
+                          <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
+                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Sample image">
+                            <a>
+                              <div class="mask rgba-white-slight"></div>
+                            </a>
+                          </div>
+                  
+                        </div>
+                        <!-- Grid column -->
+                  
+                        <!-- Grid column -->
+                        <div class="col-lg-7 col-xl-8">
+                  
+                          <!-- Post title -->
+                          <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
+                          <!-- Excerpt -->
+                          <p class="dark-grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                            quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus
+                            et aut officiis cum soluta nobis est eligendi placeat facere aut rerum.</p>
+                          <!-- Post data -->
+                          <p>by <a class="font-weight-bold">Jessica Clark</a>, 19/04/2018</p>
+                          <!-- Read more button -->
+                          <a class="btn btn-primary btn-md mx-0 btn-rounded">Read more</a>
+                  
+                        </div>
+                        <!-- Grid column -->
+                  
+                      </div>
+                      <!-- Grid row -->
+                  
+                      <hr class="my-5">
+                  
+                    </div>
+                    <!--Section: Content-->
+                  
+                  
+                  </div>
+
+                  <div class="container my-5 p-0 transparent">
+
+
+                    <!--Section: Content-->
+                    <div class="p-0 mx-md-5 text-center text-lg-left dark-grey-text">
+                
+                      <!--Grid row-->
+                      <div class="row mb-4">
+                
+                        <!--Grid column-->
+                        <div class="col-md-8 mb-4 mb-md-0">
+                
+                          <h3 class="h3">Why is it so great?</h3>
+                
+                          <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
+                            numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
+                
+                        </div>
+                        <!--Grid column-->
+                
+                        <!--Grid column-->
+                        <div class="col-md-4 mb-4 mb-md-0">
+                
+                          <a class="btn btn-green btn-md mt-md-5" href="#" role="button">Explora<i class="fa fa-travel ml-1"></i></a>
+                
+                        </div>
+                        <!--Grid column-->
+                
+                      </div>
+                      <!--Grid row-->
+                
+                      <!--Image-->
+                      <div class="view overlay z-depth-1-half">
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" class="img-fluid" alt="">
+                        <a href="#">
+                          <div class="mask rgba-white-light"></div>
+                        </a>
+                      </div>
+                
+                    </div>
+                    <!--Section: Content-->
+                
+                
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-8" role="tabpanel" aria-labelledby="nav-8-tab">
+                  <div class="container mt-5 p-0">
+                    <!--Section: Content-->
+                    <div>
+
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo Comer?</h2>
+
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                        <div class="container-fluid z-depth-1 my-5 p-0">
+  
+
+                          <!-- Section: Block Content -->
+                        
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                              aria-hidden="true">
+                              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/7MUISDJ5ZZ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        
+                            <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">video</h6>
+                            <h3 class="font-weight-bold text-center dark-grey-text pb-2">Explore</h3>
+                            <hr class="w-header my-4">
+                            <p class="lead text-center text-muted pt-2 mb-5">Explore the best MDB template in the market in a short 1-minute video.</p>
+                        
+                            <div class="row">
+                              <div class="col-md-12 mx-auto mb-4 d-flex justify-content-center">
+                        
+                                  <div class="view z-depth-1 rounded">
+                                    <img class="rounded img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(29).jpg" alt="Video title">
+                                    <div class="mask flex-center rgba-white-light">
+                                      <a id="play" class="btn-floating btn-danger btn-lg" data-toggle="modal" data-target="#modal1"><i class="fas fa-play"></i></a>
+                                    </div>
+                                  </div>
+                        
+                              </div>
+                            </div>
+                        
+                          <!-- Section: Block Content -->
+                        
+                          <br>
+                          <div class="container mt-5 pt-5 pb-3 px-5 z-depth-1">
+  
+                            <!--Section: Content-->
+                            <div class="text-center dark-grey-text">
+                              
+                              <div class="row text-center d-flex justify-content-center my-5">
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-envelope-open fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Subscription Ready</h5>
+                                  <p class="text-muted mb-0">MailChimp integration included</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-layer-group fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Block Variety</h5>
+                                  <p class="text-muted mb-0">Develop pages like lego</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-brush fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Color Pallet</h5>
+                                  <p class="text-muted mb-0">Dozen of colors for elements</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-puzzle-piece fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Page Builder</h5>
+                                  <p class="text-muted mb-0">Drag and drop page design</p>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <!--Section: Content-->
+                          
+                          
+                          </div>      
+                          
+                        </div>
+
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-8 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h2 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h2>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/0a/58/d1/73/restaurante-la-finca.jpg"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://www.excelenciasgourmet.com/sites/default/files/styles/slideshow_large/public/2019-07/La%20Casina.jpg?itok=HBf9Y2g6"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+                    <!--Section: Content-->
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-9" role="tabpanel" aria-labelledby="nav-9-tab">
+                  <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo pasear?</h2>
+                  <!-- Section description -->
+                  <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  
+                    <div class="container py-5 my-5 z-depth-1">
+                      <div class="p-md-3 mx-md-5 text-lg-left">
+                        <div class="row">
+                          <div class="col-12">
+                            <h2 class="font-weight-bold mb-3">Features</h2>
+                            <p class="lead py-3">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                              in reprehenderit in voluptate velit esse cillum dolore eu
+                              fugiat.
+                            </p>
+                            <a class="blue-text font-weight-bold" href="#">Learn more 
+                              <i class="fa fa-chevron-right pl-1"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="row mt-5">
+                          <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-map-marker-alt fa-3x indigo-text mb-4"></i>
+                              <h4 class="font-weight-bold">Feature 1</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="far fa-map fa-3x pink-text mb-4"></i>
+                              <h4 class="font-weight-bold">Feature 2</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-globe-africa fa-3x amber-text mb-4"></i>
+                               <h4 class="font-weight-bold">Feature 3</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-street-view fa-3x green-text mb-4"></i>
+                               <h4 class="font-weight-bold">Feature 4</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="container my-5">
+
+
+                      <!-- Section: Block Content -->
+                      <div class="dark-grey-text text-center">
+                    
+                        <h3 class="font-weight-bold mb-4 pb-2">Our best projects</h3>
+                        <p class="text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+                    
+                        <!-- Grid row -->
+                        <div class="row">
+                    
+                          <!-- Grid column -->
+                          <div class="col-md-6 mb-4">
+                    
+                            <div class="view overlay rounded z-depth-1">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" class="img-fluid" alt="Sample project image">
+                              <a>
+                                <div class="mask rgba-white-slight"></div>
+                              </a>
+                            </div>
+                    
+                            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                              <a class="orange-text">
+                                <h6 class="font-weight-bold mt-2 mb-3"><i class="fas fa-chart-line pr-2"></i>Marketing</h6>
+                              </a>
+                              <h4 class="font-weight-bold mb-3">Title of the news</h4>
+                              <p class="text-muted">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, adipisci velit cupidatat proident voluptatem quia numquam.</p>
+                              <a class="btn btn-success btn-rounded btn-md"> View more</a>
+                            </div>
+                    
+                          </div>
+                          <!-- Grid column -->
+                    
+                          <!-- Grid column -->
+                          <div class="col-md-6 mb-4">
+                    
+                            <div class="view overlay rounded z-depth-1">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/images/19.jpg" class="img-fluid" alt="Sample project image">
+                              <a>
+                                <div class="mask rgba-white-slight"></div>
+                              </a>
+                            </div>
+                    
+                            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                              <a class="blue-text">
+                                <h6 class="font-weight-bold mt-2 mb-3"><i class="fas fa-eye pr-2"></i>Entertainment</h6>
+                              </a>
+                              <h4 class="font-weight-bold mb-3">Title of the news</h4>
+                              <p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid, aspernatur aut odit aut fugit.</p>
+                              <a class="btn btn-success btn-rounded btn-md"> View more</a>
+                            </div>
+                    
+                          </div>
+                          <!-- Grid column -->
+                    
+                        </div>
+                        <!-- Grid row -->
+                    
+                      </div>
+                      <!-- Section: Block Content -->
+                    
+                    
+                    </div>
+                  
+                    <div class="container my-5 p-0">
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+
+
+                      <!-- Grid row -->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">International</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flask deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Experimental</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-md-0 mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-glass-martini deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Relaxing</h5>
+                              <p class="grey-text mb-md-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 text-center">
+                          <img class="img-fluid"
+                            src="https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Sample image">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="far fa-2x fa-heart deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Beloved</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-bolt deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Rapid</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-magic deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Magical</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+                  
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Tabs -->
+    </article>
+
+    <article id="nuevaS" class="list scroll indented container-fluid p-0">
+      <h6 class="section-title h1 text-dark text-center mt-5">NUEVA SEGOVIA</h6>
+      <!-- Tabs -->
+      <div id="tabs" class="mt-5 text-dark">
+        <div class="container px-0">
+          <div class="row">
+            <div class="col-xs-12 ">
+              <nav>
+                <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active text-dark" id="nav-10-tab" data-toggle="tab" href="#nav-10"
+                    role="tab" aria-controls="nav-home" aria-selected="true">Donde A</a>
+                  <a class="nav-item nav-link text-dark" id="nav-11-tab" data-toggle="tab" href="#nav-11" role="tab"
+                    aria-controls="nav-profile" aria-selected="false">Donde C</a>
+                  <a class="nav-item nav-link text-dark" id="nav-12-tab" data-toggle="tab" href="#nav-12" role="tab"
+                    aria-controls="nav-contact" aria-selected="false">Donde P</a>
+                </div>
+              </nav>
+              <div class="tab-content py-3 p-0 px-sm-0" id="nav-tabContent">
+                <div class="tab-pane fade show active p-0" id="nav-10" role="tabpanel" aria-labelledby="nav-10-tab">
+                  
+                  <div class="container mt-5">
+
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+                  
+                      <!-- Section heading -->
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Recent posts</h2>
+                      <!-- Section description -->
+                      <p class="text-center mx-auto w-responsive mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+                  
+                      <!-- Grid row -->
+                      <div class="row align-items-center">
+                  
+                        <!-- Grid column -->
+                        <div class="col-lg-5 col-xl-4">
+                  
+                          <!-- Featured image -->
+                          <div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">
+                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" alt="Sample image">
+                            <a>
+                              <div class="mask rgba-white-slight"></div>
+                            </a>
+                          </div>
+                  
+                        </div>
+                        <!-- Grid column -->
+                  
+                        <!-- Grid column -->
+                        <div class="col-lg-7 col-xl-8">
+                  
+                          <!-- Post title -->
+                          <h4 class="font-weight-bold mb-3"><strong>Title of the news</strong></h4>
+                          <!-- Excerpt -->
+                          <p class="dark-grey-text">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                            quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus
+                            et aut officiis cum soluta nobis est eligendi placeat facere aut rerum.</p>
+                          <!-- Post data -->
+                          <p>by <a class="font-weight-bold">Jessica Clark</a>, 19/04/2018</p>
+                          <!-- Read more button -->
+                          <a class="btn btn-primary btn-md mx-0 btn-rounded">Read more</a>
+                  
+                        </div>
+                        <!-- Grid column -->
+                  
+                      </div>
+                      <!-- Grid row -->
+                  
+                      <hr class="my-5">
+                  
+                    </div>
+                    <!--Section: Content-->
+                  
+                  
+                  </div>
+
+                  <div class="container my-5 p-0 transparent">
+
+
+                    <!--Section: Content-->
+                    <div class="p-0 mx-md-5 text-center text-lg-left dark-grey-text">
+                
+                      <!--Grid row-->
+                      <div class="row mb-4">
+                
+                        <!--Grid column-->
+                        <div class="col-md-8 mb-4 mb-md-0">
+                
+                          <h3 class="h3">Why is it so great?</h3>
+                
+                          <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae
+                            numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.</p>
+                
+                        </div>
+                        <!--Grid column-->
+                
+                        <!--Grid column-->
+                        <div class="col-md-4 mb-4 mb-md-0">
+                
+                          <a class="btn btn-green btn-md mt-md-5" href="#" role="button">Explora<i class="fa fa-travel ml-1"></i></a>
+                
+                        </div>
+                        <!--Grid column-->
+                
+                      </div>
+                      <!--Grid row-->
+                
+                      <!--Image-->
+                      <div class="view overlay z-depth-1-half">
+                        <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" class="img-fluid" alt="">
+                        <a href="#">
+                          <div class="mask rgba-white-light"></div>
+                        </a>
+                      </div>
+                
+                    </div>
+                    <!--Section: Content-->
+                
+                
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-11" role="tabpanel" aria-labelledby="nav-11-tab">
+                  <div class="container mt-5 p-0">
+                    <!--Section: Content-->
+                    <div>
+
+                      <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo Comer?</h2>
+
+                      <!-- Section description -->
+                      <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+
+                        <div class="container-fluid z-depth-1 my-5 p-0">
+  
+
+                          <!-- Section: Block Content -->
+                        
+                            <!-- Modal -->
+                            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                              aria-hidden="true">
+                              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                                    <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/7MUISDJ5ZZ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        
+                            <h6 class="font-weight-bold text-center grey-text text-uppercase small mb-4">video</h6>
+                            <h3 class="font-weight-bold text-center dark-grey-text pb-2">Explore</h3>
+                            <hr class="w-header my-4">
+                            <p class="lead text-center text-muted pt-2 mb-5">Explore the best MDB template in the market in a short 1-minute video.</p>
+                        
+                            <div class="row">
+                              <div class="col-md-12 mx-auto mb-4 d-flex justify-content-center">
+                        
+                                  <div class="view z-depth-1 rounded">
+                                    <img class="rounded img-fluid" src="https://mdbootstrap.com/img/Photos/Others/img%20(29).jpg" alt="Video title">
+                                    <div class="mask flex-center rgba-white-light">
+                                      <a id="play" class="btn-floating btn-danger btn-lg" data-toggle="modal" data-target="#modal1"><i class="fas fa-play"></i></a>
+                                    </div>
+                                  </div>
+                        
+                              </div>
+                            </div>
+                        
+                          <!-- Section: Block Content -->
+                        
+                          <br>
+                          <div class="container mt-5 pt-5 pb-3 px-5 z-depth-1">
+  
+                            <!--Section: Content-->
+                            <div class="text-center dark-grey-text">
+                              
+                              <div class="row text-center d-flex justify-content-center my-5">
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-envelope-open fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Subscription Ready</h5>
+                                  <p class="text-muted mb-0">MailChimp integration included</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-layer-group fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Block Variety</h5>
+                                  <p class="text-muted mb-0">Develop pages like lego</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-brush fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Color Pallet</h5>
+                                  <p class="text-muted mb-0">Dozen of colors for elements</p>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mb-4">
+                                  <i class="fas fa-puzzle-piece fa-3x mb-4 grey-text"></i>
+                                  <h5 class="font-weight-normal mb-3">Page Builder</h5>
+                                  <p class="text-muted mb-0">Drag and drop page design</p>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <!--Section: Content-->
+                          
+                          
+                          </div>      
+                          
+                        </div>
+
+
+                      <!--Grid row-->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-lg-8 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h2 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h2>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-lg-4 col-md-12">
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://media-cdn.tripadvisor.com/media/photo-s/0a/58/d1/73/restaurante-la-finca.jpg"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                          <!--News tile -->
+                          <div class="news-tile view zoom z-depth-1 rounded mb-4">
+
+                            <a href="#!" class="text-white">
+                              <img
+                                src="https://www.excelenciasgourmet.com/sites/default/files/styles/slideshow_large/public/2019-07/La%20Casina.jpg?itok=HBf9Y2g6"
+                                class="img-fluid rounded-bottom" alt="sample image">
+                              <div class="mask rgba-stylish-strong">
+                                <div class="text-white text-center py-lg-5 py-0 my-0">
+                                  <div>
+                                    <h4 class="card-title font-weight-bold pt-2">
+                                      <strong>This is news title</strong>
+                                    </h4>
+
+                                    <p class="mx-5 clearfix d-none d-md-block"></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+
+                          </div>
+                          <!--News tile -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!--Grid row-->
+
+                    </div>
+                    <!--Section: Content-->
+
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="nav-12" role="tabpanel" aria-labelledby="nav-13-tab">
+                  <h2 class="text-center font-weight-bold mb-4 pb-2">Donde Puedo pasear?</h2>
+                  <!-- Section description -->
+                  <p class="text-center lead grey-text mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                  
+                    <div class="container py-5 my-5 z-depth-1">
+                      <div class="p-md-3 mx-md-5 text-lg-left">
+                        <div class="row">
+                          <div class="col-12">
+                            <h2 class="font-weight-bold mb-3">Features</h2>
+                            <p class="lead py-3">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                              in reprehenderit in voluptate velit esse cillum dolore eu
+                              fugiat.
+                            </p>
+                            <a class="blue-text font-weight-bold" href="#">Learn more 
+                              <i class="fa fa-chevron-right pl-1"></i>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="row mt-5">
+                          <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-map-marker-alt fa-3x indigo-text mb-4"></i>
+                              <h4 class="font-weight-bold">Feature 1</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="far fa-map fa-3x pink-text mb-4"></i>
+                              <h4 class="font-weight-bold">Feature 2</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-globe-africa fa-3x amber-text mb-4"></i>
+                               <h4 class="font-weight-bold">Feature 3</h4>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
+                            <div class=" mt-3 text-center">
+                              <i class="fa fa-street-view fa-3x green-text mb-4"></i>
+                               <h4 class="font-weight-bold">Feature 4</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="container my-5">
+
+
+                      <!-- Section: Block Content -->
+                      <div class="dark-grey-text text-center">
+                    
+                        <h3 class="font-weight-bold mb-4 pb-2">Our best projects</h3>
+                        <p class="text-muted w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+                    
+                        <!-- Grid row -->
+                        <div class="row">
+                    
+                          <!-- Grid column -->
+                          <div class="col-md-6 mb-4">
+                    
+                            <div class="view overlay rounded z-depth-1">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/laptop-sm.jpg" class="img-fluid" alt="Sample project image">
+                              <a>
+                                <div class="mask rgba-white-slight"></div>
+                              </a>
+                            </div>
+                    
+                            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                              <a class="orange-text">
+                                <h6 class="font-weight-bold mt-2 mb-3"><i class="fas fa-chart-line pr-2"></i>Marketing</h6>
+                              </a>
+                              <h4 class="font-weight-bold mb-3">Title of the news</h4>
+                              <p class="text-muted">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, adipisci velit cupidatat proident voluptatem quia numquam.</p>
+                              <a class="btn btn-success btn-rounded btn-md"> View more</a>
+                            </div>
+                    
+                          </div>
+                          <!-- Grid column -->
+                    
+                          <!-- Grid column -->
+                          <div class="col-md-6 mb-4">
+                    
+                            <div class="view overlay rounded z-depth-1">
+                              <img src="https://mdbootstrap.com/img/Photos/Others/images/19.jpg" class="img-fluid" alt="Sample project image">
+                              <a>
+                                <div class="mask rgba-white-slight"></div>
+                              </a>
+                            </div>
+                    
+                            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+                              <a class="blue-text">
+                                <h6 class="font-weight-bold mt-2 mb-3"><i class="fas fa-eye pr-2"></i>Entertainment</h6>
+                              </a>
+                              <h4 class="font-weight-bold mb-3">Title of the news</h4>
+                              <p class="text-muted">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid, aspernatur aut odit aut fugit.</p>
+                              <a class="btn btn-success btn-rounded btn-md"> View more</a>
+                            </div>
+                    
+                          </div>
+                          <!-- Grid column -->
+                    
+                        </div>
+                        <!-- Grid row -->
+                    
+                      </div>
+                      <!-- Section: Block Content -->
+                    
+                    
+                    </div>
+                  
+                    <div class="container my-5 p-0">
+
+                    <!--Section: Content-->
+                    <div class="dark-grey-text">
+
+                      <!-- Section heading -->
+
+
+                      <!-- Grid row -->
+                      <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flag-checkered deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">International</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-flask deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Experimental</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-md-0 mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-glass-martini deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Relaxing</h5>
+                              <p class="grey-text mb-md-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 text-center">
+                          <img class="img-fluid"
+                            src="https://images.pexels.com/photos/672358/pexels-photo-672358.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="Sample image">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4">
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="far fa-2x fa-heart deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Beloved</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row mb-3">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-bolt deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Rapid</h5>
+                              <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit maiores
+                                nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                          <!-- Grid row -->
+                          <div class="row">
+
+                            <!-- Grid column -->
+                            <div class="col-2">
+                              <i class="fas fa-2x fa-magic deep-purple-text"></i>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-10">
+                              <h5 class="font-weight-bold mb-3">Magical</h5>
+                              <p class="grey-text mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Reprehenderit
+                                maiores nam, aperiam minima assumenda deleniti hic.</p>
+                            </div>
+                            <!-- Grid column -->
+
+                          </div>
+                          <!-- Grid row -->
+
+                        </div>
+                        <!-- Grid column -->
+
+                      </div>
+                      <!-- Grid row -->
+
+                    </div>
+                    <!--Section: Content-->
+
+
+                  </div>
+                </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ./Tabs -->
+    </article>
+
+
+  </section>
+
+
+
+
+
+
+ 
+
+
+  <aside id="menu-aside">
+    <article class="list scroll active">
+      <ul>
+        <li class="active" >
+          <a href="#home" data-router="article">
+            <strong id="home">Home</strong>
+            <small>Regresa al home</small>
+          </a>
+        </li>
+        <li>
+          <a href="#matagalpa" data-router="article">
+            <strong id="matagalpa">Matagalpa</strong>
+            <small>Elegi otra seccion</small>
+          </a>
+        </li>
+        <li>
+          <a href="#esteli" data-router="article">
+            <strong id="esteli">Esteli</strong>
+            <small>Elegi otra seccion</small>
+          </a>
+        </li>
+        <li>
+          <a href="#jinotega" data-router="article">
+            <strong id="jinotega">Jinotega</strong>
+            <small>Elegi otra seccion</small>
+          </a>
+        </li>
+        <li >
+          <a href="#madriz" data-router="article">
+            <strong id="madriz">Madriz</strong>
+            <small>Elegi otra seccion</small>
+          </a>
+        </li>
+        <li>
+          <a href="#nuevaS" data-router="article">
+            <strong id="nuevaS">Nueva Segovia</strong>
+            <small>Elegi otra seccion</small>
+          </a>
+        </li>
+      </ul>
+    </article>
+  </aside>
+
+
+
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Lungo - Dependencies -->
+  <script src="components/quojs/quo.js"></script>
+  <script src="components/lungo/lungo.js"></script>
+
+  <!-- Lungo - Sandbox App -->
+  <script>
+    Lungo.init({
+      name: 'reaumentada'
+    });
+  </script>
+</body>
+
+</html>
